@@ -1,0 +1,181 @@
+/* Write some CSS below : */
+body {
+    background-image: url(images/fondlandingpage.png);
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+.container{
+    width: 1200px;
+    margin: 20px auto;
+}
+.banner{
+    font-family: 'Kalam', cursive;
+    height: 500px;
+    overflow: hidden;
+}
+
+.card a{
+    text-decoration: none;
+    color: white;
+}   
+
+#carouselExampleSlidesOnly{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#intro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 100px;
+}
+
+#intro p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+}
+
+#intro h1{
+    color: white;
+    font-size: 50px;
+    padding-top: 100px;
+    }
+
+.card {
+    background-color: white;
+    padding: 4px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.card-inline{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.card .overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: 0.3s;
+    transform-origin: top left;
+    text-align: center;
+}
+
+.card:hover .overlay{
+    transform: scale(1);
+}
+
+.card2 {
+    background-color: white;
+    padding: 4px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.5s;
+}
+.card2 img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.card2-inline{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.card2:hover{
+    transform: scale(1.1);
+}
+.div2{
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+}
+
+.listreseaux li{
+    display: inline;
+}
+.listreseaux i{
+    letter-spacing: 40px;
+    transition: 0.8s; 
+    font-size: 50px;
+    color: grey;
+}
+.listreseaux i:hover{
+    color: red; 
+    transform: scale(1.6)
+} 
+.div5{  
+    text-align: center; 
+    margin-top: 50px;
+
+}
+
+@media (max-width:960px) {
+    .container {
+        width: 900px
+    }
+    .card-inline {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card2-inline {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width:720px) {
+    .container {
+        width: 680px
+    }
+    .card-inline {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card2-inline {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:540px) {
+    .container {
+        width: 480px
+    }
+    .card-inline {
+        grid-template-columns: 1fr;
+    }
+    .card2-inline {
+        grid-template-columns: 1fr;
+    }
+}
